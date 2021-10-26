@@ -12,12 +12,13 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <BaseIntermediateOutputPath>..\..\obj\MovieTime</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,24 +26,22 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\KSP\KSP_Data\Managed\Assembly-CSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\KSP\KSP_Data\Managed\UnityEngine.dll</HintPath>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\LIB\managed\1.0.0\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\LIB\managed\1.0.0\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CameraFilters\CameraFilter.cs" />
@@ -87,25 +86,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>set KSP_LOC="c:\KSP"
-
-if exist "%25KSP_LOC%25\GameData\MovieTime" rmdir /s /q "%25KSP_LOC%25\GameData\MovieTime"
-
-mkdir "%25KSP_LOC%25\GameData\MovieTime"
-mkdir "%25KSP_LOC%25\GameData\MovieTime\Plugins"
-mkdir "%25KSP_LOC%25\GameData\MovieTime\Shaders"
-mkdir "%25KSP_LOC%25\GameData\MovieTime\Textures"
-mkdir "%25KSP_LOC%25\GameData\MovieTime\Textures\High"
-mkdir "%25KSP_LOC%25\GameData\MovieTime\Textures\Medium"
-mkdir "%25KSP_LOC%25\GameData\MovieTime\Textures\Low"
-
-copy /y "$(TargetPath)" "%25KSP_LOC%25\GameData\MovieTime\Plugins"
-copy /y "$(SolutionDir)\Assets\Shaders\*.*" "%25KSP_LOC%25\GameData\MovieTime\Shaders"
-copy /y "$(SolutionDir)\Assets\Textures\*.*" "%25KSP_LOC%25\GameData\MovieTime\Textures"
-copy /y "$(SolutionDir)\Assets\Textures\High\*.*" "%25KSP_LOC%25\GameData\MovieTime\Textures\High"
-copy /y "$(SolutionDir)\Assets\Textures\Medium\*.*" "%25KSP_LOC%25\GameData\MovieTime\Textures\Medium"
-copy /y "$(SolutionDir)\Assets\Textures\Low\*.*" "%25KSP_LOC%25\GameData\MovieTime\Textures\Low"
-</PostBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

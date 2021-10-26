@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTime", "MovieTime.csproj", "{1FF6810C-E71F-47C7-BBA6-68B1B20A8175}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTime", "Source\MovieTime\MovieTime.csproj", "{1FF6810C-E71F-47C7-BBA6-68B1B20A8175}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

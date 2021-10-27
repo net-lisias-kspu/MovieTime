@@ -1,5 +1,7 @@
 # Movie Time /L Unleashed :: Change Log
 
+* 2015-0507: 0.5 (bernierm) for KSP 1.0.0
+	+ Compatibilty update for KSP 1.0
 * 2015-0115: 0.4 (bernierm) for KSP ['0.90', '0.25']
 	+ Effect now available on Space Center and Tracking Station modes.
 	+ Each mode has it's own MovieTime settings.

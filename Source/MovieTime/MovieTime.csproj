@@ -69,21 +69,7 @@
     <None Include="Assets\Shaders %28Source%29\MovieTime.shader" />
     <None Include="Assets\Shaders\MovieTime.shader" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Textures\High\CRTMesh.png" />
-  </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="Assets\Textures\Dust.png" />
-    <Content Include="Assets\Textures\FilmVignette.png" />
-    <Content Include="Assets\Textures\Low\CRTMesh.png" />
-    <Content Include="Assets\Textures\Medium\CRTMesh.png" />
-    <Content Include="Assets\Textures\MovieTime.png" />
-    <Content Include="Assets\Textures\Noise.png" />
-    <Content Include="Assets\Textures\NVMesh.png" />
-    <Content Include="Assets\Textures\Scratches.png" />
-    <Content Include="Assets\Textures\VHold.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent></PostBuildEvent>

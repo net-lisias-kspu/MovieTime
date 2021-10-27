@@ -25,6 +25,16 @@ So some time ago, whilst recreating an Apollo mission, the original author thoug
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8UXGvEDwdF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Features
+
+* Windows 32-bit.
+* Windows 64-bit, reported window-sizing bug (looking into).
+* Mac. @TheGamingNoobster says it does.
+* Linux. Reported to work by @BigFatStupidHead.
+* Win64 may display oversized settings window.
+* Add pixelation effect for certain modes.
+* A thermal camera mode that can be used in conjunction with Deadly Reentry.
+* A JJ Abrams camera mode. Lens flares for everyone!
 
 ### The Title Overlay System
 
